@@ -4,6 +4,8 @@
 
 将 Excel 文件转换为 `JSON` 或者 `TS` 或者 `JS` 文件。
 
+将文件输出到指定的目录中。可以在 `transformConfig.json` 中设定表名对应的规则。
+
 **解决场景：**
 
 多语言配表：
@@ -11,12 +13,10 @@
 
 ## 使用
 
-1. 将需要转换格式的 Excel 放入 `excel_need_transform` 文件夹
-
+1. 将需要转换格式的 Excel 放入 `excel_need_transform` 文件夹。
 **注意**：请按照 `excel-demo.xlsx` 的格式编辑。
 
-2. 双击 `transform.cmd`
-
+2. 双击 `transform.cmd`。
 `excel_need_transform` 文件夹中所有的 Excel 文件会转换成 JSON 之后输出到 `outputs` 文件夹。
 
 ## EXCEL 格式
@@ -25,9 +25,9 @@
 
 |  字段  |  说明  |
 | ---- | ---- |
-|  id  |  行的唯一标识符，用来获取当前行。<br>**必须为int类型**。  |
+|  id  |  必须。行的唯一标识符，用来获取当前行。<br>**必须为int类型**。  |
 |  tsVariable  |  TS 文件中的静态成员名。  |
-|  lang_[langType]  |  `lang_` 开头的字段会将指定的 `langType` 进行规则解析。  |
 |  desc  |  注释，生成 TS 文件时会为属性添加注释。  |
+|  自定义  |  自定义的字段会直接设置为对象成员。  |
 
 
