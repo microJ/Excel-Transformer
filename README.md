@@ -22,6 +22,8 @@
 
 ## 使用
 
+**首次使用请运行 `npm install` 安装依赖。**
+
 1. 将需要转换格式的 Excel 放入 `excel_need_transform` 文件夹。
 **注意**：请按照 `excel-demo.xlsx` 的格式编辑。
 
