@@ -1,0 +1,9 @@
+{
+  "json": {
+    "sayHello": "E:/_FEND-project/Excel-Transformer/outputs/test-output.json",
+    "test": [
+      "E:/_FEND-project/Excel-Transformer/outputs/test-output0.json",
+      "E:/_FEND-project/Excel-Transformer/outputs/test-output1.json"
+    ]
+  }
+}
